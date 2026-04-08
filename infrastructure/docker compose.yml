@@ -1,0 +1,19 @@
+version: '3.9'
+services:
+  user-service:
+    build: ./services/user-service
+    ports: [8080:8080]
+  notification-service:
+    build: ./services/notification-service
+    ports: [3001:3001]
+  metrics-service:
+    build: ./services/metrics-service
+    ports: [8000:8000]
+  ts-api-service:
+    build: ./services/ts-api-service
+    ports: [3002:3002]
+  redis:
+    image: redis:7
+  kafka:
+    image: bitnami/kafka:latest
+    ports: [9092:9092]
