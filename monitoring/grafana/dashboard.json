@@ -1,0 +1,14 @@
+{
+  "title": "Microservices Metrics",
+  "panels": [
+    {
+      "type": "graph",
+      "title": "CPU Usage",
+      "targets": [
+        {
+          "query": "from(bucket: \"metrics\") |> range(start: -1h)"
+        }
+      ]
+    }
+  ]
+}
