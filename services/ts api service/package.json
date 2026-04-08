@@ -1,0 +1,7 @@
+{
+  "name": "ts-api-service",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {"start": "ts-node src/index.ts"},
+  "dependencies": {"express": "^4.18.2", "typescript": "^5.2.2"}
+}
